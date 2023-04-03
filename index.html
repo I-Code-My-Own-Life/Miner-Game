@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img style="display: none;" id="nuggetImg" src="nugget2.png">
+    <img style="display: none;" id="dynamiteImg" src="dynamite3.png">
+    <h1 id="heading" style="text-align: center; color:white; position: absolute; right: 40%;"></h1>
+    <div class="container">
+        <label for="grid-size-input">Grid size:</label>
+        <input type="number" id="grid-size-input" value="10" min="1" max="50">
+        <br>
+        <label for="nuggets-input">Number of nuggets:</label>
+        <input type="number" id="nuggets-input" value="10" min="0" max="250">
+        <br>
+        <label for="dynamite-input">Number of dynamite:</label>
+        <input type="number" id="dynamite-input" value="10" min="0" max="250">
+        <br>
+        <br>
+    </div>
+    <button id="reset-button">Reset</button>
+    <canvas id="canvas"></canvas>
+</body>
+<script src="game.js"></script>
+
+</html>
