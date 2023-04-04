@@ -5,12 +5,15 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     background: rgb(52, 153, 184);
 }
 
 .container {
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
 }
 
 #canvas {
@@ -22,16 +25,52 @@ body {
 
 #reset-button {
     position: absolute;
-    bottom: 10px;
-    width: 80px;
+    bottom: 2px;
+    width: 90px;
     height: 40px;
     border-radius: 5px;
     border: 1px solid rgb(10, 92, 255);
     right: 45%;
     cursor: pointer;
     transition: 0.5s all;
+    display: none;
+    z-index: 2;
 }
 
-#reset-button:hover{
+#reset-button:hover {
     background-color: transparent;
+}
+
+#play-button {
+    position: absolute;
+    bottom: 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(10, 92, 255);
+    right: 45%;
+    cursor: pointer;
+    transition: 0.5s all;
+    z-index: 2;
+}
+
+#play-button:hover {
+    background-color: transparent;
+}
+
+
+#dynamite-input,
+#nuggets-input,
+#grid-size-input {
+    text-align: center;
+    height: 25px;
+}
+
+#heading {
+    display: none;
+    text-align: center;
+    color: white;
+    position: absolute;
+    right: 41%;
+    margin-top: 10px;
 }

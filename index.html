@@ -12,21 +12,22 @@
 <body>
     <img style="display: none;" id="nuggetImg" src="nugget2.png">
     <img style="display: none;" id="dynamiteImg" src="dynamite3.png">
-    <h1 id="heading" style="text-align: center; color:white; position: absolute; right: 40%;"></h1>
     <div class="container">
         <label for="grid-size-input">Grid size:</label>
-        <input type="number" id="grid-size-input" value="10" min="1" max="50">
+        <input type="number" id="grid-size-input" value="1" min="1" max="7">
         <br>
         <label for="nuggets-input">Number of nuggets:</label>
-        <input type="number" id="nuggets-input" value="10" min="0" max="250">
+        <input type="number" id="nuggets-input" value="15" min="0" max="250">
         <br>
         <label for="dynamite-input">Number of dynamite:</label>
         <input type="number" id="dynamite-input" value="10" min="0" max="250">
         <br>
         <br>
     </div>
+    <h1 id="heading">Miner Game</h1>
     <button id="reset-button">Reset</button>
-    <canvas id="canvas"></canvas>
+    <button id="play-button">Play</button>
+    <canvas id="canvas" tabindex="1"></canvas>
 </body>
 <script src="game.js"></script>
 
